@@ -1,0 +1,38 @@
+.select {
+  position: relative;
+  width: 100%;
+
+  select {
+    padding: 1rem 4rem 1rem 1.5rem;
+    appearance: none;
+    width: 100%;
+    background: #262b2b;
+    border-radius: 20px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    color: #868888;
+    outline: none;
+
+    &:focus {
+      background: #1d2020;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    right: 20px;
+    top: 35px;
+    width: 1.3em;
+    height: 0.5rem;
+    background-color: #868888;
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  }
+
+  &::-ms-expand {
+    display: none;
+  }
+}
